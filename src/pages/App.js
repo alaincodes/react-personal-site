@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import Index from "./Home";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
@@ -39,6 +40,16 @@ const NavBar = styled.nav`
 function App() {
   return (
     <Router>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Alain Tran | Web Developer</title>
+        <link rel="canonical" href="https://alaincodes.github.io/" />
+        <meta
+          name="description"
+          content="Alain Tran, JavaScript developer, learning and experiencing new things."
+        />
+      </Helmet>
       <AppBox>
         <NavBar>
           <ul>

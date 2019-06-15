@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 
 const Main = styled.main`
   height: 92vh;
@@ -31,6 +32,16 @@ const PortfolioGrid = styled.section`
 const Portfolio = () => {
   return (
     <Main>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Alain Tran | Web Developer | Portfolio</title>
+        <link rel="canonical" href="https://alaincodes.github.io/portfolio/" />
+        <meta
+          name="description"
+          content="Alain Tran, JavaScript & ReactJS developer, portfolio."
+        />
+      </Helmet>
       <h1>Portfolio Page</h1>
       <PortfolioGrid>
         <div>Project</div>

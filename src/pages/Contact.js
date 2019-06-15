@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Helmet } from "react-helmet";
 
 const ContactBox = styled.main`
   height: 92vh;
@@ -26,6 +27,16 @@ const ContactBox = styled.main`
 const Contact = () => {
   return (
     <ContactBox>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Alain Tran | Web Developer | Contact</title>
+        <link rel="canonical" href="https://alaincodes.github.io/contact/" />
+        <meta
+          name="description"
+          content="Alain Tran JavaScript and ReactJs, contact page, feel free to say Hi!"
+        />
+      </Helmet>
       <h1>CURRENT TECH AND STACK</h1>
       <h4>
         I tend to build most of my projects using the JAMstack's criteria.
