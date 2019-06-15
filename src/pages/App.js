@@ -12,6 +12,12 @@ const AppBox = styled.div`
   align-items: center;
   margin: auto;
   height: 8vh;
+
+  @media (max-width: 960px) {
+  }
+
+  @media (max-width: 768px) {
+  }
 `;
 
 const NavBar = styled.nav`
@@ -34,6 +40,12 @@ const NavBar = styled.nav`
         }
       }
     }
+  }
+
+  @media (max-width: 960px) {
+  }
+
+  @media (max-width: 768px) {
   }
 `;
 

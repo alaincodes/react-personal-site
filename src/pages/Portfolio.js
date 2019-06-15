@@ -12,6 +12,12 @@ const Main = styled.main`
   h1 {
     margin-bottom: 1rem;
   }
+
+  @media (max-width: 960px) {
+  }
+
+  @media (max-width: 768px) {
+  }
 `;
 
 const PortfolioGrid = styled.section`
@@ -22,10 +28,19 @@ const PortfolioGrid = styled.section`
     border-radius: 3px;
     margin: 1rem;
     padding: 4rem;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
     &:hover {
       background: gold;
     }
+  }
+
+  @media (max-width: 960px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+    overflow: scroll;
   }
 `;
 
@@ -42,7 +57,7 @@ const Portfolio = () => {
           content="Alain Tran, JavaScript & ReactJS developer, portfolio."
         />
       </Helmet>
-      <h1>Portfolio Page</h1>
+      <h1>Recent Work</h1>
       <PortfolioGrid>
         <div>Project</div>
         <div>Project</div>

@@ -30,6 +30,15 @@ const HomeBox = styled.main`
   p {
     margin-bottom: 1rem;
   }
+
+  @media (max-width: 960px) {
+  }
+
+  @media (max-width: 768px) {
+    p {
+      margin: 1rem;
+    }
+  }
 `;
 
 const Home = () => {

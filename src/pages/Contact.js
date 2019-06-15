@@ -20,6 +20,16 @@ const ContactBox = styled.main`
     display: flex;
     li {
       margin: 0.6rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin: 0 2rem;
+    h4 {
+    }
+    ul {
+      flex-direction: column;
     }
   }
 `;
@@ -37,7 +47,7 @@ const Contact = () => {
           content="Alain Tran JavaScript and ReactJs, contact page, feel free to say Hi!"
         />
       </Helmet>
-      <h1>CURRENT TECH AND STACK</h1>
+      <h1>TECH AND STACK</h1>
       <h4>
         I tend to build most of my projects using the JAMstack's criteria.
       </h4>
