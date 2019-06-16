@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useSpring, animated } from "react-spring";
 
 const HomeBox = styled.main`
   height: 92vh;
@@ -43,6 +44,11 @@ const HomeBox = styled.main`
 `;
 
 const Home = () => {
+  const props = useSpring({
+    opacity: 1,
+    from: { opacity: 0 },
+    config: { duration: 1500 }
+  });
   return (
     <HomeBox>
       <h1>Alain Tran</h1>
@@ -76,21 +82,21 @@ const Home = () => {
           </a>
         </li>
       </ul>
-      <p>
+      <animated.p style={props}>
         Hello! I'm Alain an indie JavaScript dev from France, I like to code for
         web & mobile devices. I work with a lot of appetite, honesty and
         commitment. I also like create nice UI/UX Design and follow
         Accessibility guidelines.
-      </p>
-      <p>
+      </animated.p>
+      <animated.p style={props}>
         Outside of programming, I like to cook a lot.. and learn about the
         cooking culture, especially french dishes. I was working as a cook few
         years ago, at a two star restaurant located in Paris.
-      </p>
-      <p>
+      </animated.p>
+      <animated.p style={props}>
         Mostly coding stuff with HTML, Sass and JavaScript. Currently using
         React.
-      </p>
+      </animated.p>
     </HomeBox>
   );
 };

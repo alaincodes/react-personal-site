@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
+import { useSpring, animated } from "react-spring";
 
 const ContactBox = styled.main`
   height: 92vh;
@@ -35,6 +36,11 @@ const ContactBox = styled.main`
 `;
 
 const Contact = () => {
+  const props = useSpring({
+    opacity: 1,
+    from: { opacity: 0 },
+    config: { duration: 1500 }
+  });
   return (
     <ContactBox>
       <Helmet>
@@ -51,13 +57,13 @@ const Contact = () => {
       <h4>
         I tend to build most of my projects using the JAMstack's criteria.
       </h4>
-      <ul>
+      <animated.ul style={props}>
         <li>HTML</li>
         <li>CSS/Sass</li>
         <li>JavaScript</li>
         <li>ReactJS</li>
         <li>GraphQL</li>
-      </ul>
+      </animated.ul>
     </ContactBox>
   );
 };

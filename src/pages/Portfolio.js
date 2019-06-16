@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
+import { useSpring, animated } from "react-spring";
 
 const Main = styled.main`
   height: 92vh;
@@ -45,6 +46,11 @@ const PortfolioGrid = styled.section`
 `;
 
 const Portfolio = () => {
+  const props = useSpring({
+    opacity: 1,
+    from: { opacity: 0 },
+    config: { duration: 1500 }
+  });
   return (
     <Main>
       <Helmet>
@@ -58,14 +64,16 @@ const Portfolio = () => {
         />
       </Helmet>
       <h1>Recent Work</h1>
-      <PortfolioGrid>
-        <div>Project</div>
-        <div>Project</div>
-        <div>Project</div>
-        <div>Project</div>
-        <div>Project</div>
-        <div>Project</div>
-      </PortfolioGrid>
+      <animated.div style={props}>
+        <PortfolioGrid>
+          <div>Project</div>
+          <div>Project</div>
+          <div>Project</div>
+          <div>Project</div>
+          <div>Project</div>
+          <div>Project</div>
+        </PortfolioGrid>
+      </animated.div>
     </Main>
   );
 };
