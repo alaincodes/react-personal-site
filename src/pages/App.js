@@ -34,7 +34,7 @@ const NavBar = styled.nav`
         padding: 0.5rem 0;
         margin: 0.5rem 0.2rem;
         width: 6rem;
-        transition: all 0.4s linear;
+        transition: all 0.2s linear;
         &:hover {
           background: gold;
         }

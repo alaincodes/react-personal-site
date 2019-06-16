@@ -1,6 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
+import netflix from "../assets/netflix.png";
+import bike from "../assets/bike.png";
+import uber from "../assets/uber.png";
+import rock from "../assets/rock.png";
+import kudos from "../assets/kudos.png";
+import budget from "../assets/budget.png";
 import { useSpring, animated } from "react-spring";
 
 const Main = styled.main`
@@ -24,14 +30,15 @@ const Main = styled.main`
 const PortfolioGrid = styled.section`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  div {
-    border: 1px solid white;
+  img {
     border-radius: 3px;
     margin: 1rem;
-    padding: 4rem;
     transition: all 0.3s ease-in-out;
     &:hover {
-      background: gold;
+      cursor: pointer;
+      opacity: 0.7;
+      box-shadow: 10px 10px;
+      color: gold;
     }
   }
 
@@ -40,8 +47,8 @@ const PortfolioGrid = styled.section`
   }
 
   @media (max-width: 768px) {
+    height: 80vh;
     grid-template-columns: repeat(1, 1fr);
-    overflow: scroll;
   }
 `;
 
@@ -52,29 +59,71 @@ const Portfolio = () => {
     config: { duration: 1500 }
   });
   return (
-    <Main>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Alain Tran | Web Developer | Portfolio</title>
-        <link rel="canonical" href="https://alaincodes.github.io/portfolio/" />
-        <meta
-          name="description"
-          content="Alain Tran, JavaScript & ReactJS developer, portfolio."
-        />
-      </Helmet>
-      <h1>Recent Work</h1>
-      <animated.div style={props}>
+    <animated.div style={props}>
+      <Main>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <title>Alain Tran | Web Developer | Portfolio</title>
+          <link
+            rel="canonical"
+            href="https://alaincodes.github.io/portfolio/"
+          />
+          <meta
+            name="description"
+            content="Alain Tran, JavaScript & ReactJS developer, portfolio."
+          />
+        </Helmet>
+        <h1>Recent Work (Github Links)</h1>
         <PortfolioGrid>
-          <div>Project</div>
-          <div>Project</div>
-          <div>Project</div>
-          <div>Project</div>
-          <div>Project</div>
-          <div>Project</div>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/alaincodes/Netflix-landing-clone"
+          >
+            <img src={netflix} width="200" alt="netflix clone" />
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/alaincodes/bike-app"
+          >
+            <img src={bike} width="200" alt="netflix clone" />
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/alaincodes/Shopping-website"
+          >
+            <img src={kudos} width="200" alt="netflix clone" />
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/alaincodes/rock-paper-scissorsv2"
+          >
+            <img src={rock} width="200" alt="netflix clone" />
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/alaincodes/uber-landing-clone"
+          >
+            <img src={uber} width="200" alt="netflix clone" />
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/alaincodes/budget-app-js"
+          >
+            <img src={budget} width="200" alt="netflix clone" />
+          </a>
         </PortfolioGrid>
-      </animated.div>
-    </Main>
+      </Main>
+    </animated.div>
   );
 };
 

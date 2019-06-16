@@ -42,29 +42,34 @@ const Contact = () => {
     config: { duration: 1500 }
   });
   return (
-    <ContactBox>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Alain Tran | Web Developer | Contact</title>
-        <link rel="canonical" href="https://alaincodes.github.io/contact/" />
-        <meta
-          name="description"
-          content="Alain Tran JavaScript and ReactJs, contact page, feel free to say Hi!"
-        />
-      </Helmet>
-      <h1>TECH AND STACK</h1>
-      <h4>
-        I tend to build most of my projects using the JAMstack's criteria.
-      </h4>
-      <animated.ul style={props}>
-        <li>HTML</li>
-        <li>CSS/Sass</li>
-        <li>JavaScript</li>
-        <li>ReactJS</li>
-        <li>GraphQL</li>
-      </animated.ul>
-    </ContactBox>
+    <animated.div style={props}>
+      <ContactBox>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <title>Alain Tran | Web Developer | Contact</title>
+          <link rel="canonical" href="https://alaincodes.github.io/contact/" />
+          <meta
+            name="description"
+            content="Alain Tran JavaScript and ReactJs, contact page, feel free to say Hi!"
+          />
+        </Helmet>
+        <h1>TECH AND STACK</h1>
+        <h4>
+          I tend to build most of my projects using the JAMstack's criteria.
+        </h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS/Sass</li>
+          <li>JavaScript</li>
+          <li>ReactJS</li>
+          <li>GraphQL</li>
+        </ul>
+      </ContactBox>
+    </animated.div>
   );
 };
 
