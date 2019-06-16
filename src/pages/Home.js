@@ -29,6 +29,7 @@ const HomeBox = styled.main`
   }
   p {
     margin-bottom: 1rem;
+    font-size: 1.1rem;
   }
 
   @media (max-width: 960px) {
