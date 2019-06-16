@@ -24,6 +24,9 @@ const Main = styled.main`
   }
 
   @media (max-width: 768px) {
+    h1 {
+      margin: 1rem 1rem;
+    }
   }
 `;
 

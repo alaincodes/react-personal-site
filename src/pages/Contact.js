@@ -22,6 +22,17 @@ const ContactBox = styled.main`
     li {
       margin: 0.6rem;
       font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+  h5 {
+    font-size: 0.9rem;
+    a {
+      color: black;
+      text-decoration: none;
+      &:hover {
+        color: gold;
+      }
     }
   }
 
@@ -68,6 +79,29 @@ const Contact = () => {
           <li>ReactJS</li>
           <li>GraphQL</li>
         </ul>
+        <h5>
+          Built this site with{" "}
+          <a href="https://facebook.github.io/create-react-app/">
+            Create-react-app
+          </a>{" "}
+          and{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.styled-components.com/"
+          >
+            Styled-components
+          </a>
+          . Background from{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="http://www.heropatterns.com/"
+          >
+            heropatterns
+          </a>
+          .
+        </h5>
       </ContactBox>
     </animated.div>
   );
