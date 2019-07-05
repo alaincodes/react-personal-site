@@ -29,15 +29,17 @@ const NavBar = styled.nav`
       padding: 1rem;
       button {
         background: transparent;
-        border: 2px solid black;
-        border-radius: 3px;
+        border: none;
         cursor: pointer;
         padding: 0.5rem 0;
         margin: 0.5rem 0.2rem;
         width: 6rem;
         transition: all 0.2s linear;
+        font-size: 1.1rem;
         &:hover {
-          background: gold;
+          background: linear-gradient(to right, #746e21 0%, #f55d9c 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
       }
     }
@@ -66,7 +68,7 @@ function App() {
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Alain Tran | Web Developer</title>
+        <title>Alain Tran | Développeur JavaScript</title>
         <link rel="canonical" href="https://alaincodes.github.io/" />
         <meta
           name="description"
@@ -78,7 +80,7 @@ function App() {
           <ul>
             <li>
               <Link to="/">
-                <button>Home</button>
+                <button>Accueil</button>
               </Link>
             </li>
             <li>
@@ -88,7 +90,7 @@ function App() {
             </li>
             <li>
               <Link to="/contact/">
-                <button>More..</button>
+                <button>Plus..</button>
               </Link>
             </li>
           </ul>

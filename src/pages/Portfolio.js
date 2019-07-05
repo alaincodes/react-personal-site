@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
-import netflix from "../assets/netflix.png";
-import bike from "../assets/bike.png";
-import uber from "../assets/uber.png";
-import rock from "../assets/rock.png";
+import bouteille from "../assets/bouteille.png";
+import startup from "../assets/startup.png";
+import alainv1 from "../assets/alainv1.png";
+import library from "../assets/library.png";
 import kudos from "../assets/kudos.png";
-import budget from "../assets/budget.png";
+import fylo from "../assets/fylo.png";
 import { useSpring, animated } from "react-spring";
 
 const Main = styled.main`
@@ -80,49 +80,61 @@ const Portfolio = () => {
             content="Alain Tran, JavaScript & ReactJS developer, portfolio."
           />
         </Helmet>
-        <h1>Recent Work (Github Links)</h1>
+        <h1>Portfolio</h1>
         <PortfolioGrid>
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/alaincodes/Netflix-landing-clone"
+            href="https://alaincodes.github.io/website-navbar-onscroll/"
           >
-            <img src={netflix} width="200" alt="netflix clone" />
+            <img
+              src={bouteille}
+              width="200"
+              alt="bouteille. website pour former des sommelier"
+            />
           </a>
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/alaincodes/bike-app"
+            href="https://competent-murdock-45eab5.netlify.com/"
           >
-            <img src={bike} width="200" alt="netflix clone" />
+            <img src={startup} width="200" alt="page d'accueil pour startup" />
           </a>
           <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/alaincodes/Shopping-website"
           >
-            <img src={kudos} width="200" alt="netflix clone" />
+            <img
+              src={kudos}
+              width="200"
+              alt="shopping website ajouter et enlever des produits"
+            />
           </a>
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/alaincodes/rock-paper-scissorsv2"
+            href="https://mylibraryland.netlify.com/"
           >
-            <img src={rock} width="200" alt="netflix clone" />
+            <img
+              src={library}
+              width="200"
+              alt="bibliotheque personnel code avec JS"
+            />
           </a>
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/alaincodes/uber-landing-clone"
+            href="https://alaincodes.netlify.com/"
           >
-            <img src={uber} width="200" alt="netflix clone" />
+            <img src={alainv1} width="200" alt="ancien site personnel" />
           </a>
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/alaincodes/budget-app-js"
+            href="https://alaincodes.github.io/fylo-landing-page/"
           >
-            <img src={budget} width="200" alt="netflix clone" />
+            <img src={fylo} width="200" alt="fylo challenge signup page" />
           </a>
         </PortfolioGrid>
       </Main>

@@ -38,6 +38,13 @@ const HomeBox = styled.main`
   p {
     margin-bottom: 1rem;
     font-size: 1.1rem;
+    line-height: 1.4;
+  }
+  strong {
+    background: linear-gradient(to right, #746e21 0%, #f55d9c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.3rem;
   }
 
   @keyframes shake {
@@ -96,7 +103,7 @@ const Home = () => {
     <animated.div style={props}>
       <HomeBox>
         <h1>Alain Tran</h1>
-        <h2>Jr. JavaScript Developer</h2>
+        <h2>Développeur JavaScript Jr.</h2>
         <ul>
           <li>
             <a
@@ -127,19 +134,20 @@ const Home = () => {
           </li>
         </ul>
         <p>
-          Hello! I'm Alain an indie JavaScript dev from France, I like to code
-          for web & mobile devices. I work with a lot of appetite, honesty and
-          commitment. I also like create nice UI/UX Design and follow
-          Accessibility guidelines.
+          Salut, je suis Alain, je développe des applications{" "}
+          <strong>Web et Mobile</strong>. Je travaille avec beaucoup d'appétit,
+          d'honnêté et d'engagement. J'attache beaucoup d'intérêt aux
+          <strong> design UI/UX</strong> et à l'<strong>Accessibilité</strong>.
         </p>
         <p>
-          Outside of programming, I like to cook a lot.. and learn about the
-          cooking culture. I was working as a cook few years ago, at a two star
-          restaurant located in Paris.
+          En dehors du code, vous me trouverez certainement entrain de regarder
+          ou de lire des livres/vidéos de cuisine. Anciennement commis de
+          cuisine dans un restaurant 2 étoiles à Paris.
         </p>
         <p>
-          Mostly coding stuff with HTML, Sass and JavaScript. Currently using
-          React.
+          J'utilise principalement du <strong>HTML</strong>,{" "}
+          <strong>CSS/Sass</strong>, <strong>JavaScript</strong> dans mes
+          projets et dernièrement <strong>ReactJS</strong>.
         </p>
       </HomeBox>
     </animated.div>

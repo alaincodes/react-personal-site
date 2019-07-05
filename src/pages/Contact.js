@@ -15,10 +15,16 @@ const ContactBox = styled.main`
   }
   h4 {
     margin-bottom: 1rem;
+    max-width: 600px;
+    a {
+      text-decoration: none;
+      background: linear-gradient(to right, #746e21 0%, #f55d9c 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
   ul {
     list-style-type: none;
-    display: flex;
     li {
       margin: 0.6rem;
       font-size: 1.5rem;
@@ -68,9 +74,17 @@ const Contact = () => {
             content="Alain Tran JavaScript and ReactJs, contact page, feel free to say Hi!"
           />
         </Helmet>
-        <h1>TECH AND STACK</h1>
+        <h1>Technologies</h1>
         <h4>
-          I tend to build most of my projects using the JAMstack's criteria.
+          Je tends à creer mes projets en suivant les critères{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://jamstack.org/"
+          >
+            JAMstack
+          </a>
+          , essentiellement pour des raisons de performances et de sécurité.
         </h4>
         <ul>
           <li>HTML</li>
@@ -80,11 +94,7 @@ const Contact = () => {
           <li>GraphQL</li>
         </ul>
         <h5>
-          Built this site with{" "}
-          <a href="https://facebook.github.io/create-react-app/">
-            Create-react-app
-          </a>{" "}
-          and{" "}
+          Site codé avec <a href="https://reactjs.org/">ReactJS</a> et{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -92,7 +102,7 @@ const Contact = () => {
           >
             Styled-components
           </a>
-          . Background from{" "}
+          . Background{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"
