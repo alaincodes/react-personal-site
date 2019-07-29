@@ -36,6 +36,7 @@ const ContactBox = styled.main`
     a {
       color: black;
       text-decoration: none;
+      color: green;
       &:hover {
         color: gold;
       }
@@ -94,7 +95,15 @@ const Contact = () => {
           <li>GraphQL</li>
         </ul>
         <h5>
-          Site codé avec <a href="https://reactjs.org/">ReactJS</a> et{" "}
+          Site codé par{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/alaincodes"
+          >
+            Moi
+          </a>{" "}
+          avec <a href="https://reactjs.org/">ReactJS</a> et{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"

@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import bouteille from "../assets/bouteille.png";
 import startup from "../assets/startup.png";
 import alainv1 from "../assets/alainv1.png";
-import library from "../assets/library.png";
+import clout from "../assets/clout.png";
 import kudos from "../assets/kudos.png";
 import fylo from "../assets/fylo.png";
 import { useSpring, animated } from "react-spring";
@@ -114,13 +114,9 @@ const Portfolio = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://mylibraryland.netlify.com/"
+            href="https://clout.netlify.com/"
           >
-            <img
-              src={library}
-              width="200"
-              alt="bibliotheque personnel code avec JS"
-            />
+            <img src={clout} width="200" alt="agence web, ReactJS, Sass" />
           </a>
           <a
             target="_blank"

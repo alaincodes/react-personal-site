@@ -41,7 +41,7 @@ const HomeBox = styled.main`
     line-height: 1.4;
   }
   strong {
-    background: linear-gradient(to right, #746e21 0%, #f55d9c 100%);
+    background: linear-gradient(to right, #067221 0%, #f55d9c 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.3rem;
@@ -123,15 +123,6 @@ const Home = () => {
               <i class="fab fa-github-alt" />
             </a>
           </li>
-          <li>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.linkedin.com/in/alaincodes/"
-            >
-              <i class="fab fa-linkedin-in" />
-            </a>
-          </li>
         </ul>
         <p>
           Salut, je suis Alain, je développe des applications{" "}
@@ -140,14 +131,18 @@ const Home = () => {
           <strong> design UI/UX</strong> et à l'<strong>Accessibilité</strong>.
         </p>
         <p>
-          En dehors du code, vous me trouverez certainement entrain de regarder
-          ou de lire des livres/vidéos de cuisine. Anciennement commis de
-          cuisine dans un restaurant 2 étoiles à Paris.
+          Anciennement cuisinier à Paris, quand je ne code pas, vous me
+          trouverez certainement entrain de regarder ou de lire des
+          livres/vidéos de cuisine ou simplement derrière les fourneaux.
         </p>
         <p>
           J'utilise principalement du <strong>HTML</strong>,{" "}
           <strong>CSS/Sass</strong>, <strong>JavaScript</strong> dans mes
           projets et dernièrement <strong>ReactJS</strong>.
+        </p>
+        <p>
+          Je suis disponible pour completer votre équipe et/ou mission de
+          freelance, n'hésistez pas à me contacter!
         </p>
       </HomeBox>
     </animated.div>

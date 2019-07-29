@@ -22,24 +22,21 @@ const AppBox = styled.div`
 `;
 
 const NavBar = styled.nav`
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
   ul {
     list-style-type: none;
     display: flex;
     li {
       padding: 1rem;
-      button {
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        padding: 0.5rem 0;
-        margin: 0.5rem 0.2rem;
-        width: 6rem;
-        transition: all 0.2s linear;
-        font-size: 1.1rem;
+      a {
+        text-decoration: none;
+        color: black;
         &:hover {
-          background: linear-gradient(to right, #746e21 0%, #f55d9c 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          color: grey;
         }
       }
     }
@@ -79,19 +76,13 @@ function App() {
         <NavBar>
           <ul>
             <li>
-              <Link to="/">
-                <button>Accueil</button>
-              </Link>
+              <Link to="/">Accueil</Link>
             </li>
             <li>
-              <Link to="/portfolio/">
-                <button>Portfolio</button>
-              </Link>
+              <Link to="/portfolio/">Portfolio</Link>
             </li>
             <li>
-              <Link to="/contact/">
-                <button>Plus..</button>
-              </Link>
+              <Link to="/contact/">Plus..</Link>
             </li>
           </ul>
         </NavBar>
