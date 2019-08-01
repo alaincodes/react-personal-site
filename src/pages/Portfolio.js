@@ -41,7 +41,7 @@ const PortfolioGrid = styled.section`
       cursor: pointer;
       opacity: 0.7;
       box-shadow: 10px 10px;
-      color: gold;
+      color: coral;
     }
   }
 
@@ -59,7 +59,7 @@ const Portfolio = () => {
   const props = useSpring({
     opacity: 1,
     from: { opacity: 0 },
-    config: { duration: 1500 }
+    config: { duration: 1000 }
   });
   return (
     <animated.div style={props}>
@@ -70,7 +70,7 @@ const Portfolio = () => {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
-          <title>Alain Tran | Web Developer | Portfolio</title>
+          <title>Alain Tran | Développeur ReactJS | Portfolio</title>
           <link
             rel="canonical"
             href="https://alaincodes.github.io/portfolio/"

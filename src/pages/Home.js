@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useSpring, animated } from "react-spring";
+import alainPic from "../assets/alaintran.jpg";
 
 const HomeBox = styled.main`
   height: 92vh;
@@ -10,41 +11,47 @@ const HomeBox = styled.main`
   align-items: center;
   max-width: 700px;
   margin: auto;
-  h1 {
-    color: rgb(3, 3, 3);
-    margin-bottom: 1rem;
+  .alainPic {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+  }
+  h2 {
+    color: #4a4a4a;
+    text-align: center;
   }
   ul {
     display: flex;
     list-style-type: none;
-    margin-bottom: 1rem;
+    margin: 1.5rem auto;
     li {
       padding: 0 1rem;
       i {
-        color: black;
+        color: #4a4a4a;
         font-size: 2rem;
         transition: all 0.3s ease-in-out;
         &:hover {
           animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97);
           opacity: 0.8;
-          color: gold;
+          color: coral;
         }
       }
     }
   }
-  h2 {
-    margin-bottom: 1rem;
-  }
+
   p {
     margin-bottom: 1rem;
     font-size: 1.1rem;
     line-height: 1.4;
+    color: #4a4a4a;
+    font-weight: 500;
   }
   strong {
-    background: linear-gradient(to right, #067221 0%, #f55d9c 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: coral;
     font-size: 1.3rem;
+  }
+  .email {
+    color: coral;
   }
 
   @keyframes shake {
@@ -97,13 +104,13 @@ const Home = () => {
   const props = useSpring({
     opacity: 1,
     from: { opacity: 0 },
-    config: { duration: 1500 }
+    config: { duration: 1000 }
   });
   return (
     <animated.div style={props}>
       <HomeBox>
-        <h1>Alain Tran</h1>
-        <h2>Développeur JavaScript Jr.</h2>
+        <img className="alainPic" src={alainPic} alt="photographie d'Alain" />
+        <h2>Hello, Je suis Alain, Développeur Front-end Junior.</h2>
         <ul>
           <li>
             <a
@@ -125,10 +132,11 @@ const Home = () => {
           </li>
         </ul>
         <p>
-          Salut, je suis Alain, je développe des applications{" "}
-          <strong>Web et Mobile</strong>. Je travaille avec beaucoup d'appétit,
-          d'honnêté et d'engagement. J'attache beaucoup d'intérêt aux
-          <strong> design UI/UX</strong> et à l'<strong>Accessibilité</strong>.
+          Je développe des applications <strong>Web et Mobile </strong>avec{" "}
+          <strong>ReactJS</strong>. Je travaille avec beaucoup d'appétit,
+          d'honnêté et d'engagement. J'attache beaucoup d'importance aux
+          <strong> design UI/UX</strong>, à l'<strong>Accessibilité</strong> et
+          aux <strong>Performances</strong>.
         </p>
         <p>
           Anciennement cuisinier à Paris, quand je ne code pas, vous me
@@ -136,13 +144,17 @@ const Home = () => {
           livres/vidéos de cuisine ou simplement derrière les fourneaux.
         </p>
         <p>
-          J'utilise principalement du <strong>HTML</strong>,{" "}
-          <strong>CSS/Sass</strong>, <strong>JavaScript</strong> dans mes
-          projets et dernièrement <strong>ReactJS</strong>.
-        </p>
-        <p>
           Je suis disponible pour completer votre équipe et/ou mission de
-          freelance, n'hésistez pas à me contacter!
+          freelance, n'hésistez pas à me contacter sur{" "}
+          <a
+            className="email"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/alaincodes"
+          >
+            Twitter
+          </a>
+          !
         </p>
       </HomeBox>
     </animated.div>

@@ -24,9 +24,18 @@ const AppBox = styled.div`
 const NavBar = styled.nav`
   display: flex;
   height: 10vh;
-  width: 100%;
-  justify-content: flex-end;
+  width: 50%;
+  justify-content: space-between;
   align-items: center;
+  margin-top: 1rem;
+  h3 {
+    margin-left: 1rem;
+    font-size: 2rem;
+    a {
+      text-decoration: none;
+      color: #4a4a4a;
+    }
+  }
   ul {
     list-style-type: none;
     display: flex;
@@ -34,15 +43,21 @@ const NavBar = styled.nav`
       padding: 1rem;
       a {
         text-decoration: none;
-        color: black;
+        color: #4a4a4a;
+        font-weight: 600;
         &:hover {
-          color: grey;
+          color: coral;
         }
       }
     }
   }
 
   @media (max-width: 960px) {
+    flex-direction: column;
+    margin: 1rem auto;
+    h3 {
+      margin-top: 1rem;
+    }
   }
 
   @media (max-width: 768px) {
@@ -65,7 +80,7 @@ function App() {
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Alain Tran | Développeur JavaScript</title>
+        <title>Alain Tran | Développeur ReactJS</title>
         <link rel="canonical" href="https://alaincodes.github.io/" />
         <meta
           name="description"
@@ -74,6 +89,9 @@ function App() {
       </Helmet>
       <AppBox>
         <NavBar>
+          <h3>
+            <Link to="/">Alain Tran</Link>
+          </h3>
           <ul>
             <li>
               <Link to="/">Accueil</Link>
@@ -82,7 +100,7 @@ function App() {
               <Link to="/portfolio/">Portfolio</Link>
             </li>
             <li>
-              <Link to="/contact/">Plus..</Link>
+              <Link to="/contact/">Outils</Link>
             </li>
           </ul>
         </NavBar>

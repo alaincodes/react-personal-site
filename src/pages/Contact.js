@@ -18,17 +18,17 @@ const ContactBox = styled.main`
     max-width: 600px;
     a {
       text-decoration: none;
-      background: linear-gradient(to right, #746e21 0%, #f55d9c 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: coral;
     }
   }
   ul {
     list-style-type: none;
+    margin-bottom: 1rem;
     li {
       margin: 0.6rem;
       font-size: 1.5rem;
       margin-bottom: 1rem;
+      font-weight: 900;
     }
   }
   h5 {
@@ -36,9 +36,9 @@ const ContactBox = styled.main`
     a {
       color: black;
       text-decoration: none;
-      color: green;
+      color: coral;
       &:hover {
-        color: gold;
+        color: #4a4a4a;
       }
     }
   }
@@ -57,7 +57,7 @@ const Contact = () => {
   const props = useSpring({
     opacity: 1,
     from: { opacity: 0 },
-    config: { duration: 1500 }
+    config: { duration: 1000 }
   });
   return (
     <animated.div style={props}>
@@ -68,7 +68,7 @@ const Contact = () => {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
-          <title>Alain Tran | Web Developer | Contact</title>
+          <title>Alain Tran | Développeur ReactJS | Contact</title>
           <link rel="canonical" href="https://alaincodes.github.io/contact/" />
           <meta
             name="description"
@@ -95,29 +95,13 @@ const Contact = () => {
           <li>GraphQL</li>
         </ul>
         <h5>
-          Site codé par{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://twitter.com/alaincodes"
-          >
-            Moi
-          </a>{" "}
-          avec <a href="https://reactjs.org/">ReactJS</a> et{" "}
+          Site réalisé avec <a href="https://reactjs.org/">ReactJS</a> et{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.styled-components.com/"
           >
             Styled-components
-          </a>
-          . Background{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="http://www.heropatterns.com/"
-          >
-            heropatterns
           </a>
           .
         </h5>
