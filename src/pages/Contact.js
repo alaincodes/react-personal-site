@@ -57,7 +57,7 @@ const Contact = () => {
   const props = useSpring({
     opacity: 1,
     from: { opacity: 0 },
-    config: { duration: 1000 }
+    config: { duration: 900 }
   });
   return (
     <animated.div style={props}>
@@ -76,17 +76,6 @@ const Contact = () => {
           />
         </Helmet>
         <h1>Technologies</h1>
-        <h4>
-          Je tends à creer mes projets en suivant les critères{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://jamstack.org/"
-          >
-            JAMstack
-          </a>
-          , essentiellement pour des raisons de performances et de sécurité.
-        </h4>
         <ul>
           <li>HTML</li>
           <li>CSS/Sass</li>

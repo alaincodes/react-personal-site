@@ -59,7 +59,7 @@ const Portfolio = () => {
   const props = useSpring({
     opacity: 1,
     from: { opacity: 0 },
-    config: { duration: 1000 }
+    config: { duration: 900 }
   });
   return (
     <animated.div style={props}>

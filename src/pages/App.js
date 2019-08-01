@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Index from "./Home";
+import English from "../components/English";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import styled from "styled-components";
@@ -31,6 +32,7 @@ const NavBar = styled.nav`
   h3 {
     margin-left: 1rem;
     font-size: 2rem;
+    white-space: nowrap;
     a {
       text-decoration: none;
       color: #4a4a4a;
@@ -94,19 +96,23 @@ function App() {
           </h3>
           <ul>
             <li>
-              <Link to="/">Accueil</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/portfolio/">Portfolio</Link>
             </li>
             <li>
-              <Link to="/contact/">Outils</Link>
+              <Link to="/contact/">Tech</Link>
+            </li>
+            <li>
+              <Link to="/english/">EN</Link> / <Link to="/">FR</Link>{" "}
             </li>
           </ul>
         </NavBar>
       </AppBox>
       <Route path="/" exact component={Index} />
       <Route path="/portfolio/" component={Portfolio} />
+      <Route path="/english/" component={English} />
       <Route path="/contact/" component={Contact} />
     </Router>
   );

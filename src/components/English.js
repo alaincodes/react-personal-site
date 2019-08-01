@@ -100,17 +100,17 @@ const HomeBox = styled.main`
   }
 `;
 
-const Home = () => {
+const English = () => {
   const props = useSpring({
     opacity: 1,
     from: { opacity: 0 },
-    config: { duration: 900 }
+    config: { duration: 1000 }
   });
   return (
     <animated.div style={props}>
       <HomeBox>
         <img className="alainPic" src={alainPic} alt="photographie d'Alain" />
-        <h2>Hello, Je suis Alain, Développeur Front-end Junior.</h2>
+        <h2>Hello, I'm Alain, Junior Front-end Developer.</h2>
         <ul>
           <li>
             <a
@@ -132,20 +132,20 @@ const Home = () => {
           </li>
         </ul>
         <p>
-          Je développe des applications <strong>Web et Mobile </strong>avec{" "}
-          <strong>ReactJS</strong>. Je travaille avec beaucoup d'appétit,
-          d'honnêté et d'engagement. J'attache beaucoup d'importance aux
-          <strong> design UI/UX</strong>, à l'<strong>Accessibilité</strong> et
-          aux <strong>Performances</strong>.
+          I like to code for <strong>web & mobile</strong> devices using{" "}
+          <strong>ReactJS</strong>. I work with a lot of appetite, honesty and
+          commitment. I also like create nice
+          <strong> UI/UX Design</strong> and follow{" "}
+          <strong>Accessibility</strong> guidelines.
         </p>
         <p>
-          Anciennement cuisinier à Paris, quand je ne code pas, vous me
-          trouverez certainement entrain de regarder ou de lire des
-          livres/vidéos de cuisine ou simplement derrière les fourneaux.
+          Outside of programming, you will probably see me reading, watching
+          cooking stuff or in front of the stove, I was working as a cook in
+          Paris years ago !!
         </p>
         <p>
-          Je suis disponible pour completer votre équipe et/ou mission de
-          freelance, n'hésistez pas à me contacter sur{" "}
+          I'm <strong>available</strong> to complete your team and cool
+          freelance/remote opportunities, hit me up on{" "}
           <a
             className="email"
             target="_blank"
@@ -153,12 +153,12 @@ const Home = () => {
             href="https://twitter.com/alaincodes"
           >
             Twitter
-          </a>
-          !
+          </a>{" "}
+          for future projects!
         </p>
       </HomeBox>
     </animated.div>
   );
 };
 
-export default Home;
+export default English;
